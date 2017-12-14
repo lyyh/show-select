@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './Select.less'
 const Select = React.createClass({  
   propType:{
     name: React.PropTypes.string.isRequired,
@@ -41,7 +41,9 @@ const Select = React.createClass({
     return (
     <div className='select-wrapper select-enabled'>
         <div className='select-inner' role='combobox'>
-            
+            <div className='select-content'>
+                <div className='select-value' title='1'>123</div>
+            </div>
         </div>
       <ul>
          {this.props.children}
